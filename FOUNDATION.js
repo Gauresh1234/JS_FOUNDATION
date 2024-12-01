@@ -5,7 +5,7 @@ console.log(name, age)
 
 // HOISTING//
 console.log(greeting);
-var greeting="Hello!";
+var greeting="Hello";
 
 // DATATYPES//
 var num=42;
