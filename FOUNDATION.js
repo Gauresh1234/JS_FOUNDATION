@@ -195,8 +195,27 @@ switch (fruit){
 
 // b. LOOPING STATEMENTS //
 // 1. FOR LOOP //
+for (var i=0;i<5;i++){
+    console.log(i);
+}
+
+// 2. WHILE LOOP //
+var count=0;
+while (count<3){
+    console.log(count);
+    count++;
+}
+
+// 3. DO...WHILE LOOP //
+var i=0;
+do{
+    console.log(i);
+    i++;
+}
+while(i<3);
 
 
+// DATE & TIMES //
 
 
 
