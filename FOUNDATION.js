@@ -104,7 +104,102 @@ var x=19;
 x/=76;
 console.log(x);
 
+
 // OBJECTS //
+var car={
+    brand:"Toyota",
+    model:"Corolla",
+    year:2020,
+    getInfo:function(){
+        return this.brand+""+this.model;
+    }
+};
+console.log(car.getInfo());
+
+
+// ARRAYS //
+var colors=["Red","Blue","Green"];
+console.log(colors[0]);
+
+// FUNCTION //
+// DECLARATION//
+function greet(name){
+    console.log("Hello,"+name+"!");
+}
+greet("Gauresh");
+
+// EXPRESSION//
+var sayGoodBye=function(name){
+    console.log("GoodBye,"+name+"!");
+}
+sayGoodBye("Gauresh");
+
+// PARAMETERS//
+function add (a,b){
+    return a+b;
+}
+var sum=add(5,3);
+console.log(sum);
+
+// RETURN//
+function multiply(x,y){
+    return x*y;
+}
+var product=multiply(6,9);
+console.log(product);
+
+
+// CONTROL FLOW //
+// a. CONDITIONAL STATEMENTS//
+// 1. IF STATEMENT //
+var age=19;
+if (age>=18){
+    console.log("Adult");
+}
+// 2. IF...ELSE STATEMENT //
+var age=16;
+if (age>=18){
+    console.log("Adult");
+}
+else{
+    console.log("Minor")
+}
+
+// 3. IF...ELSE IF...ELSE STATEMENT //
+var score=85;
+if (score>=90){
+    console.log("Grade:A");
+}
+else if (score>=75){
+    console.log("Grade:B");
+}
+else if (score>=60){
+    console.log("Grade:C");
+}
+else{
+    console.log("Grade:F");
+}
+
+// 4. SWITCH  STATEMENT //
+var fruit="Apple";
+switch (fruit){
+    case "Apple":
+        console.log("Apple is selected");
+        break;
+        case "banana":
+        console.log("Banana is selected");
+        break;
+        default:
+        console.log("Unknown Fruit");
+}
+
+// b. LOOPING STATEMENTS //
+// 1. FOR LOOP //
+
+
+
+
+
 
 
 
