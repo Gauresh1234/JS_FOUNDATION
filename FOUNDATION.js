@@ -280,6 +280,94 @@ var tomorrow=new Date (now.getTime()+oneDay);
 console.log(tomorrow);
 
 
+// ERROR HANDLING (try...catch) //
+try{
+    var x=y;
+}
+catch(error){
+    console.log("An error occured:"+error.message);
+}
+
+
+// ARRAY METHODS //
+// PUSH() //
+var arr=[1,2,3];
+arr.push(4);
+console.log(arr);
+
+// POP() //
+var arr=[1,2,3];
+arr.pop();
+console.log(arr);
+
+// SHIFT() //
+var arr=[1,2,3];
+arr.shift();
+console.log(arr);
+
+// UNSHIFT() //
+var arr=[2,3];
+arr.unshift(1);
+console.log(arr);
+
+// SLICE() //
+var arr=[1,2,3,4,5,6];
+var sliced=arr.slice(1,4);
+console.log(sliced);
+
+// SPLICE() //
+var arr=[1,2,3,4];
+arr.splice(2,1,5,6);
+console.log(arr);
+
+// CONCAT() //
+var arr1=[1,2];
+var arr2=[3,4];
+var combined=arr1.concat(arr2);
+console.log(combined);
+
+// forEach() //
+var arr=[1,2,3];
+arr.forEach(function(item){
+    console.log(item);
+});
+
+// map() //
+var numbers=[1,2,3];
+var doubled=numbers.map(function(num){
+    return num*2;
+});
+console.log(doubled);
+
+// filter() //
+var numbers=[1,2,3,4];
+var filtered=numbers.filter(function(num){
+    return num>2;
+});
+console.log(filtered);
+
+// INDEXOf() //
+var arr=[1,2,3,2];
+console.log(arr.indexOf(2));
+console.log(arr.indexOf(4));
+
+// reduce() //
+var numbers=[1,2,3,4];
+var sum=numbers.reduce(function(total,num){
+    return total+num;
+},0);
+console.log(sum);
+
+
+// STRICT MODE //
+"use strict";
+var x=3.14;
+y=3.14;
+console.log(x,y);
+
+
+
+
 
 
 
