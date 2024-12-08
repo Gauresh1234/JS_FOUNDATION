@@ -216,6 +216,73 @@ while(i<3);
 
 
 // DATE & TIMES //
+// 1. CREATING DATES //
+// a. CURRENT //
+var now=new Date();
+console.log(now);
+
+// b. SPECIFIC //
+var specificDate=new Date(2024,9,20,14,30);
+console.log(specificDate);
+
+// c. USING DATE STRING //
+var dateFromString=new Date("October20,2024 14:30:00");
+console.log(dateFromString);
+
+// 2. DATE METHODS //
+// a. getFullYear //
+var year=now.getFullYear();
+console.log(year);
+
+// b. getMonth() //
+var month=now.getMonth();
+console.log(month);
+
+// c. getDate() //
+var date=now.getDate();
+console.log(date);
+
+// d. getHours() //
+var hours=now.getHours();
+console.log(hours);
+
+// e. getMinutes() //
+var minutes=now.getMinutes();
+console.log(minutes);
+
+// f. setDate() //
+now.setDate(8);
+console.log(now);
+
+// g. setMonth() //
+now.setMonth(11);
+console.log(now);
+
+// 3. FORMATTING DATES //
+// a. toDateString() //
+console.log(now.toDateString());
+
+// b. toTimeString //
+console.log(now.toTimeString());
+
+// c. toLocaleDateString() //
+console.log(now.toLocaleDateString());
+
+// d. toLocaleTimeString //
+console.log(now.toLocaleTimeString());
+
+// b. toISOString //
+console.log(now.toISOString());
+
+// 4. DATE CALCULATIONS //
+var oneDay=24*60*60*1000;
+var tomorrow=new Date (now.getTime()+oneDay);
+console.log(tomorrow);
+
+
+
+
+
 
 
 
