@@ -366,6 +366,20 @@ y=3.14;
 console.log(x,y);
 
 
+// SCOPE CLOSURES //
+// 1. GLOBAL SCOPE //
+var globalVar="I am global";
+function showGlobal(){
+    console.log(globalVar);
+}
+showGlobal();
+
+// 2. LOCAL SCOPE //
+function localScopeExample(){
+    var localVar="I am Local";
+    console.log(localVar);
+}
+localScopeExample();
 
 
 
